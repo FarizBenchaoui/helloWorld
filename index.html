@@ -1,0 +1,45 @@
+<html>
+
+    <head>
+        <title>Mini Project</title>
+        <script type="application/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script> 
+        
+        <link rel="stylesheet" href="jquery-ui/jquery-ui.css">
+        <script src="jquery-ui/jquery-ui.js"></script>
+        
+        <style type="text/css">
+            .littleSquare{
+                width:50px;
+                height:50px;
+                background-color: yellow;
+            }
+            
+            .bigSquare{
+                width:400px;
+                height:400px;
+                background-color: red;
+            }
+        </style>
+
+    </head>
+    <body>
+        <p>sort your favourite things to do</p>
+       <ul id="sortable">
+           <li>something</li>
+           <li>something</li>
+           <li>something</li>
+           <li>something</li>
+        
+       </ul>
+        <script>
+        $( "#sortable" ).sortable();
+        $( "#sortable" ).disableSelection();
+         
+        
+        </script>
+
+    
+    </body>
+
+
+</html>
